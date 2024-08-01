@@ -28,5 +28,8 @@ main-container {
 
 .user-data {
   display: flex;
-  flex-grow: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
