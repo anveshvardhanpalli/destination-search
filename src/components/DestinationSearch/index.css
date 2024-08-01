@@ -1,0 +1,32 @@
+/* Write your CSS here */
+.input-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #f1f5f9;
+  width: 230px;
+  height: 60px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.image-size {
+  height: 30px;
+  width: 50px;
+  display: flex;
+  align-self: center;
+}
+input {
+  border-width: 0px;
+  background-color: #f1f5f9;
+}
+.sub-container,
+main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-data {
+  display: flex;
+  flex-grow: wrap;
+}
