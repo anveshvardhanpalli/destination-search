@@ -16,6 +16,9 @@ class DestinationSearch extends Component {
   render() {
     const {destinationsList} = this.props
     const {inputText} = this.state
+    const filtereData = destinationsList.filter(item =>
+      item.name.includes(inputText),
+    )
     return (
       <div>
         <div className="sub-container">
@@ -34,7 +37,7 @@ class DestinationSearch extends Component {
             />
           </div>
           <div className="user-data">
-            {destinationsList.map(item => (
+            {filtereData.map(item => (
               <DestinationItem key={item.id} userData={item} />
             ))}
           </div>
